@@ -8,7 +8,7 @@ const fireBaseApp = admin.initializeApp({
 
 const adminDb = fireBaseApp.firestore()
 
-const doc = adminDb.collection('bug').doc('bug')
+const doc = adminDb.collection('data').doc('bug')
 doc.get().then(snapshot => {
 	// downlaod the data.
 	const data = snapshot.data()
@@ -17,6 +17,6 @@ doc.get().then(snapshot => {
 	console.log(JSON.stringify(data, undefined, 4))
 
 	// try to set the exact same data somewher else. Throws!
-	const otherRef = adminDb.collection('bug').doc('bugTarget')
+	const otherRef = adminDb.collection('data').doc('bugTarget')
 	otherRef.set(data)
 })

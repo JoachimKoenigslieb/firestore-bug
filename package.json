@@ -1,0 +1,22 @@
+{
+  "name": "firebase-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+	"firebase-admin": "11.4.0",
+	"@climaider/calculator": "2.5.1",
+	"firebase": "9.8.3"
+  },
+  "devDependencies": {
+	"typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
